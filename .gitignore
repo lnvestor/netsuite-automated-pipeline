@@ -1,0 +1,80 @@
+# NetSuite SDF Security - NEVER COMMIT THESE
+private.key
+*.key
+*.pem
+*.p12
+*.pfx
+
+# NetSuite Account-Specific Files
+suitecloud.config.js
+.sdf
+
+# Authentication & Credentials
+.env
+.env.local
+.env.production
+auth.json
+credentials.json
+
+# Build & Deployment Artifacts
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+
+# Delta Deployment Cache
+automation/.file-hashes.json
+automation/deployment-cache/
+
+# IDE & Editor Files
+.vscode/settings.json
+.vscode/launch.json
+*.swp
+*.swo
+*~
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+validation.log
+deployment.log
+
+# Temporary Files
+tmp/
+temp/
+.tmp/
+
+# NetSuite Generated Files (keep structure, ignore content)
+src/Objects/*.xml
+src/FileCabinet/SuiteScripts/*.js
+!src/Objects/.gitkeep
+!src/FileCabinet/SuiteScripts/.gitkeep
+
+# TypeScript Build Output
+typescript/build/
+dist/
+build/
+
+# Coverage & Testing
+coverage/
+.nyc_output/
+.coverage/
+
+# Package Lock Files (optional - team preference)
+package-lock.json
+yarn.lock
+
+# SDF Manifest (contains account-specific info)
+src/manifest.xml
+src/deploy.xml

@@ -1,0 +1,20 @@
+{
+  "name": "netsuite-automated-deployment",
+  "version": "1.0.0",
+  "description": "Automated SuiteScript build and deployment pipeline",
+  "scripts": {
+    "build": "node automation/build-scripts.js",
+    "deploy": "npm run build && suitecloud project:deploy",
+    "build:deploy": "npm run deploy",
+    "dev": "npm run build:deploy",
+    "delta": "node automation/delta-deploy.js",
+    "watch": "npm run delta"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "fs-extra": "^11.0.0"
+  }
+}

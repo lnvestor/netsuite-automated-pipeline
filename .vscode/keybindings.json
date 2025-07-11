@@ -1,0 +1,20 @@
+[
+    {
+        "key": "ctrl+shift+d",
+        "command": "workbench.action.tasks.runTask",
+        "args": "NetSuite: Build & Deploy",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+b",
+        "command": "workbench.action.tasks.runTask", 
+        "args": "NetSuite: Build",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "f5",
+        "command": "workbench.action.tasks.runTask",
+        "args": "NetSuite: Quick Deploy",
+        "when": "editorTextFocus"
+    }
+]
